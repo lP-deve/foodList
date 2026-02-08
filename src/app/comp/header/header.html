@@ -1,0 +1,22 @@
+
+
+<header>
+    <a routerLink="/" >
+        <img src="https://i.pinimg.com/1200x/64/e8/8c/64e88cd50f16128276744c13e27c748c.jpg" alt="">
+    </a>
+   <nav [class.open]="Isopened">
+     <a (click)="close()" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+     <a (click)="close()" routerLink="about" routerLinkActive="active">about</a>
+     <a (click)="close()" routerLink="food" routerLinkActive="active">food list</a>
+   </nav>
+
+
+   <div class="div" (click)="toggle()">
+    <label class="burger" for="burger">
+  <input type="checkbox" [checked]="Isopened">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+   </div>
+</header>

@@ -1,0 +1,15 @@
+
+<h2>food searcher</h2>
+<input #box type="text" placeholder="Search here" (input)="current = box.value">
+<p>{{ current }}</p>
+
+<div class="grid">
+  @for (food of foodList; track $index) {
+    @if (food.name.toLowerCase().startsWith(current.toLowerCase())) {
+      <div class="card">
+        <img [src]="food.image" alt="{{ food.name }}">
+        <h1>{{ food.name }}</h1>
+      </div>
+    }
+  }
+</div>

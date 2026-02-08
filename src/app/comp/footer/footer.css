@@ -1,0 +1,16 @@
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    padding:6px 12px;
+    background-color: rgba(0, 0, 0, 0.816);
+    backdrop-filter: blur(12px);
+}
+footer p{
+    color:rgb(255, 251, 251);
+}
+
