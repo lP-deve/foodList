@@ -1,9 +1,9 @@
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:22px;
-    width: 70vw;
+    width: 88vw;
     margin:auto;
     margin-top: 40px;
     
@@ -32,10 +32,20 @@ input:focus{
   outline:1px solid blue;
 }
 
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:12px;
+    width: 50%;
+    margin:auto;
+}
 .card{
     border-radius: 12px;
     border:1px solid grey;
     background-color: white;
+    padding:8px 16px;
 }
 
 .card img{
@@ -47,15 +57,20 @@ input:focus{
 h1{
     text-align: center;
 }
+.desc{
+    color:#333;
+    text-align: center;
+    margin-block: 10px;
+}
 @media screen and (max-width: 1000px){
     .grid{
         grid-template-columns: 1fr 1fr;
     }
     .card img{
-        width: 90%;
+
         margin:auto;
         display: block;
-        margin-top: 20px;
+       
     }
 }
 

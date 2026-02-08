@@ -1,7 +1,9 @@
 
-<h2>food searcher</h2>
+<div class="searchbar">
+  <h2>food searcher</h2>
 <input #box type="text" placeholder="Search here" (input)="current = box.value">
 <p>{{ current }}</p>
+</div>
 
 <div class="grid">
   @for (food of foodList; track $index) {
@@ -9,6 +11,7 @@
       <div class="card">
         <img [src]="food.image" alt="{{ food.name }}">
         <h1>{{ food.name }}</h1>
+        <p class="desc">{{food.description}}</p>
       </div>
     }
   }

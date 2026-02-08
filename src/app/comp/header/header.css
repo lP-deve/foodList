@@ -92,6 +92,9 @@ a{
     display: none;
 
 }
+a.active{
+  color:cadetblue
+}
 
 @media screen and (max-width: 900px){
     .div{
