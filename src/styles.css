@@ -2,7 +2,10 @@
 body{
  background-color: rgba(23, 23, 23, 0.959);;
  scroll-behavior: smooth;
- font-family: cursive;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 *{
